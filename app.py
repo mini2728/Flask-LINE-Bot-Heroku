@@ -37,6 +37,6 @@ def handle_message(event):
 
     # Send To Line
     # reply = TextSendMessage(text=f"{get_message}")
-    reply = TextSendMessage(text=f"{"你好"}")
+    reply = TextSendMessage(text="你好")
     if get_message == "機器人":
         line_bot_api.reply_message(event.reply_token, reply)
